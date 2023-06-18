@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "api"
+version = "0.2.0"
+description = ""
+authors = ["Baturalp KIZILTAN <baturalp.kiziltan@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+huggingface-hub = "^0.15.1"
+fastapi = "^0.97.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+python-multipart = "^0.0.6"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
